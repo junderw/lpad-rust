@@ -1,8 +1,10 @@
 [package]
 name = "lpad"
-version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
+version = "1.0.0"
+edition = "2018"
+keywords = ["lpad"]
+description = "Left-pad each line in a string"
+license = "MIT"
+homepage = "https://github.com/junderw/lpad-rust"
+documentation = "https://docs.rs/crate/lpad"
+repository = "https://github.com/junderw/lpad-rust"

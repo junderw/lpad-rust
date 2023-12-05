@@ -70,5 +70,12 @@ mod tests {
     fn it_works() {
         assert_eq!(lpad("hello\nworld", " "), " hello\n world");
         assert_eq!(lpad("hello\nworld\n", " "), " hello\n world\n");
+        assert_eq!(lpad("hello\nworld\n", " "), " hello\n world\n");
+        assert_eq!(lpad("hello\r\nworld", " "), " hello\r\n world");
+        assert_eq!(lpad("hello\r\nworld\r\n", " "), " hello\r\n world\r\n");
+        assert_eq!(
+            lpad("hello\r\nworld\r\n", " aaa "),
+            " aaa hello\r\n aaa world\r\n"
+        );
     }
 }
